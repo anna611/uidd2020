@@ -1,0 +1,233 @@
+body{
+  background-color:#F9F0CD;
+}
+
+#menu{
+  height:100vh;
+  width:316px;
+  background-color:#EFB875;
+  z-index: 1;
+  border-width: 0;
+  position: fixed;
+  top : 0;
+  left: 0;
+}
+.logo{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  font-family: "Microsoft YaHei";
+  font-size: 36px;
+  color: #725D3D;
+}
+.list{
+  width:276px;
+  position: relative;
+  top: 30px;
+  left: 40px;
+  font-family: "Microsoft YaHei";
+  font-size: 28px;
+  color: #ffffff;
+  border: none;
+  padding-top: 10px;
+  padding-bottom:15px ;
+}
+.sec_list{
+  display: none;
+  position: absolute;
+  top: -15px;
+  left: 276px;
+  font-family: "Microsoft YaHei";
+  font-size: 24px;
+  color: #000000;
+  background-color: #8c6239;
+  border: none; 
+  opacity:0.9;
+}
+.list:hover{
+  color:black;
+}
+.list:hover .sec_list{
+  display: inline-block;
+}
+.line{
+  position: relative;
+  top:20px;
+  border: none;
+  padding: 0px;
+}
+.sec_line{
+  position: relative;
+  border: none;
+  
+}
+.cat{
+  position: absolute;
+  bottom: 1vh;
+  left:20vw;
+  animation: appear 1s 1;
+  animation-delay: 0s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+.home{
+  position: absolute;
+  top: 30vh;
+  right:3vw;
+  visibility: hidden;
+  animation: appear 2s 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.foot{
+  position: absolute;
+  visibility: hidden;
+  animation: walk 18s infinite;
+  animation-delay: 2s;
+}
+@keyframes walk{
+  0%{visibility:visible;bottom: 20vh;left:38vw;transform: rotate(10deg);}
+  2.7%{visibility:visible;bottom: 20vh;left:38vw;transform: rotate(10deg);}
+  2.8%{visibility: hidden;}
+  5.5%{visibility: hidden;}
+  5.6%{visibility: visible;bottom: 26vh;left:40vw;transform: rotate(12deg);}
+  8.3%{visibility: visible;bottom: 26vh;left:40vw;transform: rotate(12deg);}
+  8.4%{visibility: hidden;}
+  11%{visibility: hidden;}
+  11.2%{visibility:visible;bottom: 32vh;left:42vw;transform: rotate(20deg);}
+  13.99%{visibility:visible;bottom: 32vh;left:42vw;transform: rotate(20deg);}
+  14%{visibility: hidden;}
+  16.78%{visibility: hidden;}
+  16.8%{visibility: visible;bottom: 36vh;left:44vw;transform: rotate(20deg);}
+  19.59%{visibility: visible;bottom: 36vh;left:44vw;transform: rotate(20deg);}
+  19.6%{visibility: hidden;}
+  22.39%{visibility: hidden;}
+  22.4%{visibility:visible;bottom: 40vh;left:47vw;transform: rotate(22deg);}
+  25.1%{visibility:visible;bottom: 40vh;left:47vw;transform: rotate(22deg);}
+  25.2%{visibility: hidden;}
+  27.9%{visibility: hidden;}
+  28%{visibility: visible;bottom: 42vh;left:50vw;transform: rotate(24deg);}
+  30.7%{visibility: visible;bottom: 42vh;left:50vw;transform: rotate(24deg);}
+  30.8%{visibility: hidden;}
+  33.5%{visibility: hidden;}
+  33.6%{visibility:visible;bottom: 44vh;left:53vw;transform: rotate(26deg);}
+  36.3%{visibility:visible;bottom: 44vh;left:53vw;transform: rotate(26deg);}
+  36.4%{visibility: hidden;}
+  39.1%{visibility: hidden;}
+  39.2%{visibility: visible;bottom: 46vh;left:56vw;transform: rotate(28deg);}
+  41.9%{visibility: visible;bottom: 46vh;left:56vw;transform: rotate(28deg);}
+  42%{visibility: hidden;}
+  44.7%{visibility: hidden;}
+  44.8%{visibility:visible;bottom: 46vh;left:60vw;transform: rotate(28deg);}
+  47.5%{visibility:visible;bottom: 46vh;left:60vw;transform: rotate(28deg);}
+  47.6%{visibility: hidden;}
+  50.3%{visibility: hidden;}
+  50.4%{visibility: visible;bottom: 44vh;left:64vw;transform: rotate(30deg);}
+  53.1%{visibility: visible;bottom: 44vh;left:64vw;transform: rotate(30deg);}
+  53.2%{visibility: hidden;}
+  55.9%{visibility: hidden;}
+  56%{visibility:visible;bottom: 42vh;left:68vw;transform: rotate(28deg);}
+  58.7%{visibility:visible;bottom: 42vh;left:68vw;transform: rotate(28deg);}
+  58.8%{visibility: hidden;}
+  61.5%{visibility: hidden;}
+  61.6%{visibility: visible;bottom: 38vh;left:72vw;transform: rotate(26deg);}
+  64.3%{visibility: visible;bottom: 38vh;left:72vw;transform: rotate(26deg);}
+  64.4%{visibility: hidden;}
+  67.1%{visibility: hidden;}
+  67.2%{visibility:visible;bottom: 36vh;left:76vw;transform: rotate(24deg);}
+  69.9%{visibility:visible;bottom: 36vh;left:76vw;transform: rotate(24deg);}
+  70%{visibility: hidden;}
+  72.7%{visibility: hidden;}
+  72.8%{visibility: visible;bottom: 38vh;left:80vw;transform: rotate(18deg);}
+  75.5%{visibility: visible;bottom: 38vh;left:80vw;transform: rotate(18deg);}
+  75.6%{visibility: hidden;}
+  78.3%{visibility: hidden;}
+  78.4%{visibility:visible;bottom: 42vh;left:84vw;transform: rotate(15deg);}
+  81.1%{visibility:visible;bottom: 42vh;left:84vw;transform: rotate(15deg);}
+  81.2%{visibility: hidden;}
+  83.9%{visibility: hidden;}
+  84%{visibility: visible;bottom: 46vh;left:88vw;transform: rotate(12deg);}
+  86.7%{visibility: visible;bottom: 46vh;left:88vw;transform: rotate(12deg);}
+  86.8%{visibility: hidden;}
+  89.5%{visibility: hidden;}
+  89.6%{visibility:visible;bottom: 50vh;left:92vw;transform: rotate(10deg);}
+  92.3%{visibility:visible;bottom: 50vh;left:92vw;transform: rotate(10deg);}
+  92.4%{visibility: hidden;}
+}
+.cloud{
+  position: absolute;
+  top: 28vh;
+  right:3vw;
+  animation: appear_cloud1 3s infinite;
+  animation-delay: 2s;
+  visibility: hidden;
+}
+.cloud_2{
+  position: absolute;
+  top: 24vh;
+  right:4vw;
+  visibility: hidden;
+  animation: appear_cloud2 3s infinite;
+  animation-delay: 2s;
+}
+.cloud_3{
+  position: absolute;
+  top: 20vh;
+  right:6vw;
+  visibility: hidden;
+  animation: appear_cloud3 3s infinite;
+  animation-delay: 2s;
+}
+.title_1{
+  position: absolute;
+  top: 12vh;
+  left:42.5vw;
+  writing-mode: vertical-rl;
+  color: #000000;
+  font-family: "Microsoft YaHei UI reqular";
+  font-size: 28px;
+  animation: appear 1s 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+.title_2{
+  position: absolute;
+  top: 17vh;
+  left:40vw;
+  writing-mode: vertical-rl;
+  color: #000000;
+  font-family: "Microsoft YaHei UI reqular";
+  font-size: 28px;
+  animation: appear 1s 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+@keyframes appear{
+  0% {visibility: hidden;}
+  100%{visibility: visible;}
+}
+
+@keyframes appear_cloud1{
+  0%{visibility:visible;}
+  16.66%{visibility:visible;}
+  16.67%{visibility: hidden;}
+  100%{visibility: hidden;}
+}
+@keyframes appear_cloud2{
+  0%{visibility:hidden;}
+  16.67%{visibility: hidden;}
+  33.33%{visibility: hidden;}
+  33.34%{visibility: visible;}
+  50%{visibility: hidden;}
+  100%{visibility: hidden;}
+}
+@keyframes appear_cloud3{
+  0%{visibility:hidden;}
+  16.67%{visibility: hidden;}
+  66.67%{visibility: hidden;}
+  83.34%{visibility: visible;}
+  98%{visibility: hidden;}
+  100%{visibility: hidden;}
+}
